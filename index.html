@@ -69,6 +69,41 @@
     <div class="hero-version">v1.0.0 · macOS Sonoma+</div>
   </div>
 
+  <!-- Terminal mockup showing Claude permission prompt -->
+  <div class="terminal-mockup">
+    <div class="terminal-bar">
+      <div class="terminal-dots">
+        <span class="t-dot t-dot--red"></span>
+        <span class="t-dot t-dot--yellow"></span>
+        <span class="t-dot t-dot--green"></span>
+      </div>
+      <div class="terminal-title">claude — ~/projects/backend-api</div>
+    </div>
+    <div class="terminal-body">
+      <div class="terminal-line">
+        <span class="t-prompt">❯</span>
+        <span class="t-cmd"> implement the auth middleware</span>
+      </div>
+      <div class="terminal-line t-dim">⏺ Reading files, writing code…</div>
+      <div class="terminal-sep"></div>
+      <div class="terminal-permission">
+        <div class="t-perm-label">Bash command</div>
+        <div class="t-perm-cmd">
+          <span class="t-perm-code">npm run test:auth</span>
+          <span class="t-perm-desc">Run auth test suite</span>
+        </div>
+        <div class="t-perm-question">Do you want to proceed?</div>
+        <div class="t-perm-options">
+          <div class="t-perm-opt t-perm-opt--selected">❯ 1. Yes</div>
+          <div class="t-perm-opt">  2. Yes, and don't ask again</div>
+          <div class="t-perm-opt">  3. No</div>
+        </div>
+      </div>
+      <div class="terminal-sep"></div>
+      <div class="terminal-hint">Esc to cancel · Tab to amend</div>
+    </div>
+  </div>
+
   <!-- Mockup column: notification first, then menu bar popup -->
   <div class="hero-mockup">
     <!-- macOS notification mockup -->
@@ -175,6 +210,129 @@
       <div class="popup-footer">
         <span>⚙ Preferences</span>
         <span>Quit</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SESSION HUB -->
+<section class="session-hub" id="sessions">
+  <div class="container">
+    <div class="session-hub-inner">
+      <div class="session-hub-text">
+        <div class="section-label">Session Hub</div>
+        <h2 class="section-title">All your agents.<br/>One glance.</h2>
+        <p>No more hunting across terminal windows. Agent Pulse gives you a live overview of every running session — what each one is doing, which needs attention, and how long it's been waiting.</p>
+        <ul class="hub-features">
+          <li>
+            <div class="hub-feat-dot" style="background:#0A84FF"></div>
+            <div>
+              <strong>Running</strong> — session is actively executing tools or writing code
+            </div>
+          </li>
+          <li>
+            <div class="hub-feat-dot" style="background:#FF453A"></div>
+            <div>
+              <strong>Input Required</strong> — blocked on your approval, click to jump there instantly
+            </div>
+          </li>
+          <li>
+            <div class="hub-feat-dot" style="background:#B0B0B0"></div>
+            <div>
+              <strong>Idle</strong> — finished responding, ready for your next message
+            </div>
+          </li>
+        </ul>
+        <p class="hub-note">Clicking any row focuses the exact terminal window — Terminal.app tab, iTerm2 session, VS Code panel.</p>
+      </div>
+      <div class="session-hub-mockup">
+        <div class="hub-popup">
+          <div class="hub-popup-header">
+            <div class="hub-header-left">
+              <svg width="16" height="11" viewBox="0 0 24 18" fill="none">
+                <path d="M2 9 H6 L8 6 L10 12 L12 3 L14 12 L16 7 H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="21" cy="4" r="3" fill="#FF453A"/>
+              </svg>
+              <span>Agent Pulse</span>
+            </div>
+            <span class="hub-badge">3</span>
+          </div>
+          <div class="popup-divider"></div>
+          <div class="hub-session hub-session--permission">
+            <div class="hub-session-left">
+              <div class="status-dot status-dot--red"></div>
+              <div>
+                <div class="hub-session-name">backend-api</div>
+                <div class="session-meta">
+                  <span class="provider-badge">C</span>
+                  <span class="terminal-name">VS Code</span>
+                  <span class="session-path">~/projects/backend-api</span>
+                </div>
+              </div>
+            </div>
+            <div class="hub-session-right">
+              <div class="session-status session-status--red">Input Required</div>
+              <div class="session-time">just now</div>
+            </div>
+          </div>
+          <div class="hub-session">
+            <div class="hub-session-left">
+              <div class="status-dot status-dot--blue"></div>
+              <div>
+                <div class="hub-session-name">frontend-dashboard</div>
+                <div class="session-meta">
+                  <span class="provider-badge">C</span>
+                  <span class="terminal-name">iTerm2</span>
+                  <span class="session-path">~/projects/dashboard</span>
+                </div>
+              </div>
+            </div>
+            <div class="hub-session-right">
+              <div class="session-status session-status--blue">Running</div>
+              <div class="session-time">1m ago</div>
+            </div>
+          </div>
+          <div class="hub-session">
+            <div class="hub-session-left">
+              <div class="status-dot status-dot--blue"></div>
+              <div>
+                <div class="hub-session-name">data-pipeline</div>
+                <div class="session-meta">
+                  <span class="provider-badge">C</span>
+                  <span class="terminal-name">Terminal</span>
+                  <span class="session-path">~/projects/pipeline</span>
+                </div>
+              </div>
+            </div>
+            <div class="hub-session-right">
+              <div class="session-status session-status--blue">Running</div>
+              <div class="session-time">3m ago</div>
+            </div>
+          </div>
+          <div class="hub-session">
+            <div class="hub-session-left">
+              <div class="status-dot status-dot--grey"></div>
+              <div>
+                <div class="hub-session-name">docs-site</div>
+                <div class="session-meta">
+                  <span class="provider-badge">C</span>
+                  <span class="terminal-name">Ghostty</span>
+                  <span class="session-path">~/projects/docs</span>
+                </div>
+              </div>
+            </div>
+            <div class="hub-session-right">
+              <div class="session-status session-status--grey">Idle</div>
+              <div class="session-time">8m ago</div>
+            </div>
+          </div>
+          <div class="popup-divider"></div>
+          <div class="popup-footer">
+            <span>⚙ Preferences</span>
+            <span>Quit</span>
+          </div>
+        </div>
+        <div class="hub-click-hint">↑ Click any row to jump to that terminal</div>
       </div>
     </div>
   </div>
