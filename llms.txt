@@ -23,6 +23,7 @@ Agent Pulse sits in your menu bar, watches all running Claude Code sessions, and
 
 ```
 brew tap useagentpulse/agentpulse
+brew trust useagentpulse/agentpulse
 brew install --cask agentpulse
 ```
 
