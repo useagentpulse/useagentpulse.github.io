@@ -1,0 +1,55 @@
+# Agent Pulse
+
+> macOS menu bar app that monitors AI coding agent sessions and notifies you when any session needs attention.
+
+Agent Pulse sits in your menu bar, watches all running Claude Code sessions, and fires a macOS notification the moment any session needs your attention. One click jumps to the exact terminal window.
+
+## What it does
+
+- Monitors all Claude Code sessions in real time
+- Sends macOS notifications when a session requires input or permission
+- Clicking a notification focuses the exact terminal tab (Terminal.app, iTerm2, VS Code, Warp, Ghostty)
+- Shows all active sessions in a single menu bar popup with status, terminal name, and elapsed time
+- Auto-installs Claude hooks — no manual configuration required
+- 100% local, no telemetry, no network calls beyond localhost
+
+## Status states
+
+- **Idle** (grey) — session finished responding, ready for next input
+- **Running** (blue) — session is actively executing tools or writing code
+- **Input Required** (red) — session blocked, needs your approval or response
+
+## Install
+
+```
+brew tap useagentpulse/agentpulse
+brew install --cask agentpulse
+```
+
+Or download the DMG from: https://github.com/useagentpulse/agentpulse-app/releases/latest
+
+## Requirements
+
+- macOS 14 (Sonoma) or later
+- Claude Code CLI (`claude` command)
+
+## Supported terminals
+
+Terminal.app, iTerm2, VS Code, Warp, Ghostty, IntelliJ IDEA
+
+## Architecture
+
+Built with Swift 6, SwiftUI, Hexagonal Architecture (Ports & Adapters). Extensible to support other AI agent CLIs (Gemini, Codex, Aider) by implementing a single protocol.
+
+## Links
+
+- Homepage: https://useagentpulse.github.io
+- Source code: https://github.com/useagentpulse/agentpulse-app
+- Releases: https://github.com/useagentpulse/agentpulse-app/releases
+- Changelog: https://useagentpulse.github.io/changelog.html
+- Issues: https://github.com/useagentpulse/agentpulse-app/issues
+- Homebrew tap: https://github.com/useagentpulse/homebrew-agentpulse
+
+## Current version
+
+v1.0.1 — July 2026
