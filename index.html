@@ -69,6 +69,41 @@
     <div class="hero-version">v1.0.0 · macOS Sonoma+</div>
   </div>
 
+  <!-- Terminal mockup: Claude waiting for permission -->
+  <div class="terminal-mockup">
+    <div class="terminal-bar">
+      <div class="terminal-dots">
+        <span class="t-dot t-dot--red"></span>
+        <span class="t-dot t-dot--yellow"></span>
+        <span class="t-dot t-dot--green"></span>
+      </div>
+      <div class="terminal-title">claude — ~/projects/backend-api</div>
+    </div>
+    <div class="terminal-body">
+      <div class="terminal-line">
+        <span class="t-prompt">❯</span>
+        <span class="t-cmd"> implement the auth middleware</span>
+      </div>
+      <div class="terminal-line t-dim">⏺ Reading files, writing code…</div>
+      <div class="terminal-sep"></div>
+      <div class="terminal-permission">
+        <div class="t-perm-label">Bash command</div>
+        <div class="t-perm-cmd">
+          <span class="t-perm-code">npm run test:auth</span>
+          <span class="t-perm-desc">Run auth test suite</span>
+        </div>
+        <div class="t-perm-question">Do you want to proceed?</div>
+        <div class="t-perm-options">
+          <div class="t-perm-opt t-perm-opt--selected">❯ 1. Yes</div>
+          <div class="t-perm-opt">  2. Yes, and don't ask again</div>
+          <div class="t-perm-opt">  3. No</div>
+        </div>
+      </div>
+      <div class="terminal-sep"></div>
+      <div class="terminal-hint">Esc to cancel · Tab to amend</div>
+    </div>
+  </div>
+
   <!-- Mockup column: notification first, then menu bar popup -->
   <div class="hero-mockup">
     <!-- macOS notification mockup -->
@@ -92,42 +127,6 @@
         </div>
       </div>
       <div class="notif-label">macOS notification</div>
-    </div>
-
-    <!-- Terminal: Claude waiting for permission -->
-    <!-- Terminal mockup showing Claude permission prompt -->
-    <div class="terminal-mockup">
-      <div class="terminal-bar">
-        <div class="terminal-dots">
-          <span class="t-dot t-dot--red"></span>
-          <span class="t-dot t-dot--yellow"></span>
-          <span class="t-dot t-dot--green"></span>
-        </div>
-        <div class="terminal-title">claude — ~/projects/backend-api</div>
-      </div>
-      <div class="terminal-body">
-        <div class="terminal-line">
-          <span class="t-prompt">❯</span>
-          <span class="t-cmd"> implement the auth middleware</span>
-        </div>
-        <div class="terminal-line t-dim">⏺ Reading files, writing code…</div>
-        <div class="terminal-sep"></div>
-        <div class="terminal-permission">
-          <div class="t-perm-label">Bash command</div>
-          <div class="t-perm-cmd">
-            <span class="t-perm-code">npm run test:auth</span>
-            <span class="t-perm-desc">Run auth test suite</span>
-          </div>
-          <div class="t-perm-question">Do you want to proceed?</div>
-          <div class="t-perm-options">
-            <div class="t-perm-opt t-perm-opt--selected">❯ 1. Yes</div>
-            <div class="t-perm-opt">  2. Yes, and don't ask again</div>
-            <div class="t-perm-opt">  3. No</div>
-          </div>
-        </div>
-        <div class="terminal-sep"></div>
-        <div class="terminal-hint">Esc to cancel · Tab to amend</div>
-      </div>
     </div>
 
     <!-- Menu bar + popup window -->
