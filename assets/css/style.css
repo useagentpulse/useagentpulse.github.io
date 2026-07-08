@@ -86,8 +86,8 @@ a { color: inherit; text-decoration: none; }
   min-height: 100vh; display: flex; align-items: center;
   padding: 100px 24px 80px;
   position: relative; overflow: hidden;
-  max-width: 1200px; margin: 0 auto;
-  gap: 40px; flex-wrap: wrap; justify-content: center;
+  max-width: 1100px; margin: 0 auto;
+  gap: 48px; flex-wrap: wrap; justify-content: center;
 }
 .hero-bg { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
 .grid-lines {
@@ -155,8 +155,8 @@ a { color: inherit; text-decoration: none; }
 .btn-ghost:hover { background: rgba(255,255,255,0.1); }
 
 /* ── MENU BAR MOCKUP ─────────────────────────────────────── */
-.hero-mockup { position: relative; z-index: 1; flex: 1 1 320px; max-width: 380px; }
-.menubar-strip { margin-top: 20px;
+.hero-mockup { position: relative; z-index: 1; flex: 1 1 380px; max-width: 420px; display: flex; flex-direction: column; gap: 12px; }
+.menubar-strip { margin-top: 0;
   background: rgba(30,30,40,0.9);
   border: 1px solid var(--border-2);
   border-radius: var(--radius-sm) var(--radius-sm) 0 0;
@@ -504,7 +504,7 @@ a { color: inherit; text-decoration: none; }
 
 
 /* ── NOTIFICATION MOCKUP ─────────────────────────────────── */
-.notif-mockup { margin-top: 12px; margin-bottom: 4px; }
+.notif-mockup { margin-top: 0; margin-bottom: 0; }
 .notif-banner {
   display: flex; align-items: center; gap: 12px;
   background: rgba(44, 44, 60, 0.96);
@@ -575,7 +575,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ── TERMINAL MOCKUP ─────────────────────────────────────── */
 .terminal-mockup {
-  flex: 1 1 340px; max-width: 440px;
+  width: 100%;
   border-radius: var(--radius);
   border: 1px solid var(--border-2);
   overflow: hidden;
